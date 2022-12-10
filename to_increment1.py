@@ -1,6 +1,10 @@
 import time
 
 
+
+
+#入力とその監視
+
 while True:
 
     n = input("Please input number.: ")
@@ -9,6 +13,7 @@ while True:
     try:
 
         n = int(n)
+
 
     except ValueError:
 
@@ -21,6 +26,8 @@ while True:
 
 
 
+
+#出力
 
 for i in range(n):
 
