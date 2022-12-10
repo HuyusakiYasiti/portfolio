@@ -10,6 +10,8 @@ while flag == True:
     chosen = input("Please enter a letter. : ")
 
 
+    #半角スペースで置き換える
+
     if chosen in letters: 
 
         number = letters.index(chosen)
@@ -18,6 +20,7 @@ while flag == True:
 
         letters.insert(number, " ")
 
+    #続行するか問う
 
     flag = input("Please enter a letter to countinue. :")
 
@@ -25,6 +28,7 @@ while flag == True:
 
 
 
+#整形する
 
 letters = str(letters)
 
