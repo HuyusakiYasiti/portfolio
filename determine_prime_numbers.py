@@ -1,4 +1,4 @@
-import math, time
+import math
 
 
 
@@ -100,16 +100,6 @@ if __name__ == "__main__":
 
     n = input()
 
-
-    str = time.perf_counter()
-
-
     res = main(n)
 
-    print("!") if res == True else print("......")
-
-
-    end = time.perf_counter()
-
-
-    print(end - str)
+    print("!") if res == True else print("...")
