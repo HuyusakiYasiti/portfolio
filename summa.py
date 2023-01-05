@@ -1,10 +1,10 @@
-#連続する整数を足し合わせる関数
+#自然数の和を求める
 
-def summa(end, str=1):
+def summa(end):
 
     n = 0
 
-    for i in range(str, end + 1):
+    for i in range(1, end + 1):
 
         n = n + i
 
@@ -13,16 +13,30 @@ def summa(end, str=1):
 
 
 
+#等差数列の和を求める
+
+def sigma(sta, end):
+
+    a = summa(end)
+
+    s = summa(sta - 1)
+
+    return a - s
+
+
+
+
 #デモ
 
 def main():
+
 
     import time
 
 
     s = time.perf_counter()
 
-    n = summa(100)
+    n = sigma(1, 100)
 
     e = time.perf_counter()
 
